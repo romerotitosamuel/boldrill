@@ -4,123 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boldrill S.R.L.</title>
-    <!--Estilo primario-->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/slider.css">
+    <!-- STYLES CONECTIONS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- I dont remember this link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    
     <!-- fonts.google.com  font-family: 'Source Sans Pro', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     
 </head>
 <body>
-<div class="page">
-    
-    <div class="contanier">
-        <nav class="nav-main">
-            <img src="img/logoBoldrillBlanco.png" alt="Logo Empresarial" class="brand">
-            <ul>
-                <li><a href="#">QUIENES SOMOS</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="#">FOTOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </div>    
-    
-    <!--SLIDER BEGIN-->
-    <div class="container-all">
-
-        <input type="radio" id="1" name="image-slide" hidden/>
-        <input type="radio" id="2" name="image-slide" hidden/>
-        <input type="radio" id="3" name="image-slide" hidden/>
-
-        <div class="slide">
-
-            <div class="item-slide">
-                <img src="img/img1.jpg">
-            </div>
-            <div class="item-slide">
-                <img src="img/img2.jpg">
-            </div>
-            <div class="item-slide">
-                <img src="img/img3.jpg">
-            </div>
-
-        </div>
-
-        <div class="pagination">
-           
-            <label class="pagination-item" for="1">
-                <img src="img/img1.jpg">
-            </label>
-            <label class="pagination-item" for="2">
-                <img src="img/img2.jpg">
-            </label>
-            <label class="pagination-item" for="3">
-                <img src="img/img3.jpg">
-            </label>
-            
-        </div>
-        
+    <div class="page">
+        <!-- CONECTION TO REACT EN APP.JS -->
+        <div id= "root"></div>   
     </div>
-    <!--SLIDER END-->
     
-    <div class="center-content">
-        <h1>Perforación Horizontal Dirigida</h1>
-        <p>Herramientas de perforacion de ultima generación</p>
-        <h1>Protección Catódica</h1>
-        <p>Protección de tanques, ductos y variedad de estructuras contra la corrosión</p>
-    </div>
-    <div class="center-columns">
-        <div class="presentation">
-            <h2>Nos caracterizamos por contar con personal altamente capacitado para la elaboración de ingeniería básica.</h2>
-        </div>
-        <div class="pilares">
-            <h2>Misión</h2>
-            <p>Brindar un servicio de calidad que le permita a nuestros clientes minimizar al máximo los riesgos de seguridad, daños al medio ambiente y conflictos sociales.</p>
-        </div>
-        <div class="pilares">
-            <h2>Visión</h2>
-            <p>Concientizar a los clientes y constructores en general de cómo y con que herramientas lo puedo hacer mejor.</p>
-        </div>
-        <div class="pilares">
-            <h2>Valores</h2>
-            <p>- Capacitación cantinua del personal. <br>- Satifacer al cliente en costos, plazos y calidad. <br>- Conciencia ciudadana en salud, seguridad medio ambiente y en aspectos sociales.</p>
-        </div>
-    </div>
+    <!-- SCRIPTS FOR REACT CONNECTION -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 
+    <!-- Scripts - javascript without React-->
+    <!--<script src="scripts/slider-script.js"></script>-->
+    
+    <!-- SCRIPTS FROM COMPONENTS -- TO EDIT -->
+    <script type="text/jsx" src="Components/Home.js"></script>
+    <script type="text/jsx" src="Components/Slider.js"></script>
+    <script type="text/jsx" src="Components/Contact.js"></script>
 
+    <!-- SCRIPT FOR APP.JS CONECTION -->
+    <script type="text/jsx" src="app.js"></script>
 
-
-
-
-
-    <!--FOOTER -->
-    <footer>
-        <div class="col1">
-            <a href="https://www.google.com.bo/maps/place/17%C2%B047'06.1%22S+63%C2%B012'08.2%22W/@-17.7850377,-63.2028342,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d-17.7850392!4d-63.2022871?hl=es-419" target="_blank">
-                <img src="img/oficina.jpg" alt="Dirección de la empresa">
-            </a>
-
-        </div>
-        <div class="col2">
-            <p>Para cualquier consulta. <br> Tel/Fax. (591) - 3 3 571527 <br> Av. Roca y Coronada <br> No. 732 entre Segundo <br> y Tercer Anillo <br> Santa Cruz - Bolivia</p>
-        </div>
-        <div class="col3">
-            <a href="https://www.google.com.bo/maps/place/17%C2%B047'06.1%22S+63%C2%B012'08.2%22W/@-17.7850377,-63.2028342,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d-17.7850392!4d-63.2022871?hl=es-419" target="_blank">
-                <img src="img/adress.png" alt="Dirección de la empresa">
-            </a>
-            
-        </div>
-    </footer>
-</div>
-
-<!-- SCRIPTS SECTION-->
-<script src="main.js"></script>
-<!-- API FROM GOOGLE MAPS-->
-
-<!-- https://www.google.com.bo/maps/place/17%C2%B047'06.1%22S+63%C2%B012'08.2%22W/@-17.7850377,-63.2028342,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d-17.7850392!4d-63.2022871?hl=es-419 -->
-
+   
 </body>
 </html>
